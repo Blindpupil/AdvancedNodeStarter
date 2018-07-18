@@ -10,6 +10,8 @@ require('./models/Blog');
 require('./services/passport');
 require('./services/cache');
 
+// Mongoose does not want to use its built-in Promise implementation by default.
+// This tells mongoose to use the global (Node) promise object
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI, { useMongoClient: true });
 
