@@ -31,9 +31,7 @@ class CustomPage {
     await this.page.setCookie({name: 'session', value: sessionString});
     await this.page.setCookie({name: 'session.sig', value: sig});
     // refresh the page to re-render the app as a logged in user
-    await this.page.goto('http://localhost:3000/blogs');
-
-    await this.page.waitFor('#root');
+    await this.page.goto('http://localhost:3000/blogs', { waitUntil: 'domcontentloaded' });
   }
   // once and never again
   async getContentsOf(selector) {

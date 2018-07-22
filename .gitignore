@@ -3,3 +3,8 @@ nohup.out
 .DS_Store
 .idea
 .node-version
+
+# Private
+/config/ci.js
+/config/dev.js
+/config/prod.js

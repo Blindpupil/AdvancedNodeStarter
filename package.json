@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "jest" : {
+  "jest": {
     "setupTestFrameworkScriptFile": "./tests/setup.js"
   },
   "scripts": {
@@ -22,7 +22,7 @@
     "puppeteer": "^1.0.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.188.0",
+    "aws-sdk": "^2.279.1",
     "body-parser": "^1.17.2",
     "concurrently": "^3.5.0",
     "cookie-session": "^2.0.0-beta.2",
@@ -34,6 +34,6 @@
     "passport-google-oauth20": "^1.0.0",
     "path-parser": "^2.0.2",
     "redis": "^2.8.0",
-    "uuid": "^3.2.1"
+    "uuid": "^3.3.2"
   }
 }
